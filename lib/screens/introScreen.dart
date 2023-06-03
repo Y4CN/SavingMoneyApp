@@ -5,6 +5,7 @@ import 'package:lottie/lottie.dart';
 import 'package:money_app/constant/colorConst.dart';
 import 'package:money_app/constant/textStyleConst.dart';
 import 'package:money_app/gen/assets.gen.dart';
+import 'package:money_app/screens/homeScreen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class IntroScreen extends StatefulWidget {
@@ -147,7 +148,13 @@ class _IntroScreenState extends State<IntroScreen> {
                               curve: Curves.ease);
                           setState(() {});
                         } else {
-                          // Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => ,), (route) => false,);
+                          Navigator.pushAndRemoveUntil(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const HomeScreen(),
+                            ),
+                            (route) => false,
+                          );
                         }
                       },
                       child: page < 2
