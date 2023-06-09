@@ -7,9 +7,15 @@ class TextStyleConst {
     color: ColorConst.primaryColor,
     fontSize: 22,
     fontWeight: FontWeight.w700,
-  ); static TextStyle desTextStyleIntro = GoogleFonts.poppins(
+  );
+  static TextStyle desTextStyleIntro = GoogleFonts.poppins(
     color: ColorConst.secondPrimaryColor,
     fontSize: 14,
     fontWeight: FontWeight.w400,
+  );
+  static TextStyle primaryTextStyle = GoogleFonts.montserrat(
+    color: Colors.white,
+    fontSize: 24,
+    fontWeight: FontWeight.w700
   );
 }
